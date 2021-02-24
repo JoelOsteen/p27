@@ -29,3 +29,4 @@ class Bob {
         ellipse(0, 0, this.r, this.r);
         pop()
       }
+}
