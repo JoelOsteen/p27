@@ -1,7 +1,7 @@
 class Bob {
     constructor(x,y,radius){
             var options={
-                isStatic:true,
+                isStatic:false,
                 restitution:0.3,
                 friction:0.5,
                 density:1.2
@@ -10,7 +10,7 @@ class Bob {
             this.x=x;
             this.y=y;
             this.r=radius;
-            this.body=Bodies.circle(this.x,this.y,this.r,options);
+            this.body=Bodies.circle(this.x,this.y,this.r/2,options);
             World.add(world,this.body);
             
     
@@ -29,6 +29,3 @@ class Bob {
         ellipse(0, 0, this.r, this.r);
         pop()
       }
-    
-    
-    }
